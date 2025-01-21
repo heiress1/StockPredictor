@@ -102,7 +102,7 @@ def plot_raw_data():
 
     # Adds a scatter plot to the figure
     # pandas dataframe is similar to a dictionary where you can access the columns using the key
-    fig.add_trace(go.Scatter(x=data['Date'], y=data['Open'], name='Stock Open'))
+    # fig.add_trace(go.Scatter(x=data['Date'], y=data['Open'], name='Stock Open')) removed due to unanecessary infromation 
     fig.add_trace(go.Scatter(x=data['Date'], y=data['Close'], name='Stock Close'))
     fig.layout.update(title_text="Time Series Data", xaxis_rangeslider_visible=True)
     # Display the figure in the Streamlit app
